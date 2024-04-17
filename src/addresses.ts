@@ -235,6 +235,16 @@ const BLAST_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x549FEB8c9bd4c12Ad2AB27022dA12492aC452B66'
 }
 
+const REDSTONE_GARNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x338F6033D373F610510e0F285637Ef5DDA776742',
+  multicallAddress: '0x320776fE9c8bed28dd6545A7B8e66114b7217153',
+  quoterAddress: '0xEBe5eAC00Dbbe2b26D1112399d3795f865cD268e',
+  v3MigratorAddress: '0x32d8273909300339d01c097E3A79eA522C0CCb47',
+  nonfungiblePositionManagerAddress: '0xa46F04F08Ea3AA4e1D22dFEe7f1C014C85Fc2EF9',
+  tickLensAddress: '0xe0e63e8a518b001A36FF8ac9F910CeC699D79c5A',
+  swapRouter02Address: '0xfB60447BF76d38A36A140a0e427C3f0787Eb3e80'
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -256,7 +266,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.ZORA]: ZORA_ADDRESSES,
   [ChainId.ZORA_SEPOLIA]: ZORA_SEPOLIA_ADDRESSES,
   [ChainId.ROOTSTOCK]: ROOTSTOCK_ADDRESSES,
-  [ChainId.BLAST]: BLAST_ADDRESSES
+  [ChainId.BLAST]: BLAST_ADDRESSES,
+  [ChainId.REDSTONE_GARNET]: REDSTONE_GARNET_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
