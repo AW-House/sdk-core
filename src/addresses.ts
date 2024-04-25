@@ -155,6 +155,15 @@ const REDSTONE_GARNET_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0xfB60447BF76d38A36A140a0e427C3f0787Eb3e80'
 }
 
+const REDSTONE_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xece75613Aa9b1680f0421E5B2eF376DF68aa83Bb',
+  multicallAddress: '0xd57B52452a0FDfE3ff8e0A40Bd10D00D0bfe0723',
+  quoterAddress: '0x2986d9721A49838ab4297b695858aF7F17f38014',
+  v3MigratorAddress: '0xa46F04F08Ea3AA4e1D22dFEe7f1C014C85Fc2EF9',
+  nonfungiblePositionManagerAddress: '0x6Cdd7Ad7a1CacCe6163ed26BBA22E0A04dF41AD8',
+  tickLensAddress: '0x600749AA1c493aB8656AD3aeFd2Fd645C7Ba2CdA',
+  swapRouter02Address: '0xEBe5eAC00Dbbe2b26D1112399d3795f865cD268e'
+}
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
@@ -172,7 +181,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.AVALANCHE]: AVALANCHE_ADDRESSES,
   [ChainId.BASE]: BASE_ADDRESSES,
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
-  [ChainId.REDSTONE_GARNET]: REDSTONE_GARNET_ADDRESSES
+  [ChainId.REDSTONE_GARNET]: REDSTONE_GARNET_ADDRESSES,
+  [ChainId.REDSTONE]: REDSTONE_ADDRESSES
 }
 
 /* V3 Contract Addresses */
